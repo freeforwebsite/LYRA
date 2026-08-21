@@ -75,7 +75,7 @@ jobs:
         run: |
           if [ "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" != "" ]; then
             # Signed build
-            ./gradlew assembleArm64GmsRelease \
+            ./gradlew assembleArm64FossRelease \
               -Pandroid.injected.signing.store.file=$PWD/app/keystore/release.keystore \
               -Pandroid.injected.signing.store.password=${{ secrets.RELEASE_STORE_PASSWORD }} \
               -Pandroid.injected.signing.key.alias=${{ secrets.RELEASE_KEY_ALIAS }} \
@@ -87,7 +87,7 @@ jobs:
             # Unsigned build fallback to debug keystore
             mkdir -p app/keystore
             keytool -genkey -v -keystore $PWD/app/keystore/debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
-            ./gradlew assembleArm64GmsRelease \
+            ./gradlew assembleArm64FossRelease \
               -Pandroid.injected.signing.store.file=$PWD/app/keystore/debug.keystore \
               -Pandroid.injected.signing.store.password=android \
               -Pandroid.injected.signing.key.alias=androiddebugkey \
@@ -116,7 +116,7 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Echo-arm64
+          name: Lyra-arm64
           path: app/build/outputs/apk/release-artifacts/*.apk
 
       - name: Parse Release Info
