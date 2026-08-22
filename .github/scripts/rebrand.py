@@ -44,7 +44,7 @@ def main():
                     replace_in_file(filepath, r'echo\.music\.iad1tya', 'com.maxrave')
                     
                     # Fix missing Logger dependency by falling back to android.util.Log
-                    replace_in_file(filepath, r'import com\.maxrave\.logger\.Logger', 'import android.util.Log\nimport com.maxrave.logger.Logger')
+                    replace_in_file(filepath, r'import com\.maxrave\.logger\.Logger', 'import android.util.Log')
                     replace_in_file(filepath, r'Logger\.d\(', 'Log.d(')
                     replace_in_file(filepath, r'Logger\.e\(', 'Log.e(')
                     replace_in_file(filepath, r'Logger\.i\(', 'Log.i(')
