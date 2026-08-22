@@ -40,19 +40,24 @@ jobs:
       - name: Build APK
         working-directory: upstream_src
         run: ./gradlew assembleDebug
+
+      - name: Prepare APK for Release
+        working-directory: upstream_src
+        run: |
+          find app/build/outputs/apk/debug/ -name "*.apk" -exec cp {} lyra.apk \;
         
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: LYRA-App-Debug
-          path: upstream_src/app/build/outputs/apk/debug/*.apk
+          name: LYRA-App
+          path: upstream_src/lyra.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: "LYRA-Nightly-${{ github.run_number }}"
           name: "LYRA Auto-Build ${{ github.run_number }}"
-          files: upstream_src/app/build/outputs/apk/debug/*.apk
+          files: upstream_src/lyra.apk
           draft: false
           prerelease: false
         env:
