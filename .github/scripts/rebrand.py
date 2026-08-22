@@ -1,4 +1,4 @@
-﻿import os
+import os
 import re
 
 def replace_in_file(filepath, pattern, replacement, flags=0):
@@ -32,12 +32,22 @@ def main():
 
     # Fix broken upstream imports in master branch caused by migrating echo.music to com.maxrave
     for broken_module in ['crashlytics', 'crashlytics-empty', 'cast', 'cast-empty', 'lastfm', 'lastfm-empty']:
-        if not os.path.exists(broken_module):
-            continue
+        # Fix namespace in build.gradle.kts
+        build_gradle = os.path.join(broken_module, 'build.gradle.kts')
+        if os.path.exists(build_gradle):
+            replace_in_file(build_gradle, r'echo\.music\.iad1tya', 'com.maxrave')
+            
         for root, _, files in os.walk(broken_module):
             for file in files:
                 if file.endswith('.kt') or file.endswith('.xml'):
-                    replace_in_file(os.path.join(root, file), r'echo\.music\.iad1tya', 'com.maxrave')
+                    filepath = os.path.join(root, file)
+                    replace_in_file(filepath, r'echo\.music\.iad1tya', 'com.maxrave')
+                    
+                    # Fix missing Logger dependency by falling back to android.util.Log
+                    replace_in_file(filepath, r'import com\.maxrave\.logger\.Logger', 'import android.util.Log\nimport com.maxrave.logger.Logger')
+                    replace_in_file(filepath, r'Logger\.d\(', 'Log.d(')
+                    replace_in_file(filepath, r'Logger\.e\(', 'Log.e(')
+                    replace_in_file(filepath, r'Logger\.i\(', 'Log.i(')
 
     # Fix broken upstream imports in core submodule where it tries to use org.simpmusic instead of org.echomusic
     if os.path.exists('core'):
