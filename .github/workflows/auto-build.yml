@@ -1,4 +1,4 @@
-﻿name: Daily Auto Rebrand and Build LYRA
+name: Daily Auto Rebrand and Build LYRA
 
 on:
   push:
@@ -25,8 +25,12 @@ jobs:
           submodules: recursive
           path: upstream_src
           
-      - name: Copy Rebrand Script to Source
+      - name: Overlay LYRA modifications and icons
         run: |
+          cp -r lyra_scripts/androidApp/src/main/res/mipmap-* upstream_src/androidApp/src/main/res/ || true
+          cp -r lyra_scripts/app/src/main/res/mipmap-* upstream_src/app/src/main/res/ || true
+          cp -r lyra_scripts/icons/* upstream_src/icons/ || true
+          cp -r lyra_scripts/app/src/main/res/drawable/ic_launcher* upstream_src/app/src/main/res/drawable/ || true
           cp lyra_scripts/.github/scripts/rebrand.py upstream_src/rebrand.py
           
       - name: Run Rebrand Script
