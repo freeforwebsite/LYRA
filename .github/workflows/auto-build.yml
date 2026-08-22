@@ -22,7 +22,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: EchoMusicApp/Echo-Music
-          ref: v1.0.1
           submodules: recursive
           path: upstream_src
           
