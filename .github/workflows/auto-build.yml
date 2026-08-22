@@ -1,10 +1,10 @@
 ﻿name: Daily Auto Rebrand and Build LYRA
 
 on:
+  push:
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
-  push:
 
 jobs:
   build:
@@ -17,9 +17,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Clone Upstream Echo-Music
+      - name: Clone Upstream Echo-Music (Latest Stable Release)
         run: |
           git clone --recursive https://github.com/EchoMusicApp/Echo-Music.git upstream_src
+          cd upstream_src
+          LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+          git checkout $LATEST_TAG
+          git submodule update --init --recursive
           
       - name: Copy Rebrand Script to Source
         run: |
