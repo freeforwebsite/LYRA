@@ -39,6 +39,16 @@ def main():
                 if file.endswith('.kt'):
                     replace_in_file(os.path.join(root, file), r'echo\.music\.iad1tya', 'com.maxrave')
 
+    # Fix broken upstream imports in core submodule where it tries to use org.simpmusic instead of org.echomusic
+    if os.path.exists('core'):
+        for root, _, files in os.walk('core'):
+            for file in files:
+                if file.endswith('.kt'):
+                    filepath = os.path.join(root, file)
+                    replace_in_file(filepath, r'org\.simpmusic\.cast', 'org.echomusic.cast')
+                    replace_in_file(filepath, r'org\.simpmusic\.lastfm', 'org.echomusic.lastfm')
+                    replace_in_file(filepath, r'org\.simpmusic\.crashlytics', 'org.echomusic.crashlytics')
+
     # Aggressive search for Support/Donation UI across all Kotlin Multiplatform UI files
     for root_dir in ['composeApp', 'app', 'core']:
         if not os.path.exists(root_dir):
