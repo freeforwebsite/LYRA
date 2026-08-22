@@ -19,7 +19,11 @@ jobs:
           
       - name: Clone Upstream Echo-Music (Latest Stable Release)
         run: |
-          git clone --branch v1.0.1 --recursive https://github.com/EchoMusicApp/Echo-Music.git upstream_src
+          git clone --recursive https://github.com/EchoMusicApp/Echo-Music.git upstream_src
+          cd upstream_src
+          git fetch --tags
+          git checkout v1.0.1
+          git submodule update --init --recursive
           
       - name: Copy Rebrand Script to Source
         run: |
