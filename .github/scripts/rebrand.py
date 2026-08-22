@@ -15,6 +15,8 @@ def main():
     # 1. Update applicationId and references in build files
     for build_file in ['androidApp/build.gradle.kts', 'app/build.gradle.kts']:
         replace_in_file(build_file, r'applicationId\s*=\s*"[^"]+"', 'applicationId = "com.music.lyra"')
+        replace_in_file(build_file, r'"EchoMusic Dev"', '"LYRA"')
+        replace_in_file(build_file, r'"EchoMusic"', '"LYRA"')
 
     for gs_file in ['androidApp/google-services.json', 'app/google-services.json']:
         replace_in_file(gs_file, r'echo\.music\.iad1tya', 'com.music.lyra')
