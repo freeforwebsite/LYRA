@@ -36,14 +36,14 @@ def main():
             continue
         for root, _, files in os.walk(broken_module):
             for file in files:
-                if file.endswith('.kt'):
+                if file.endswith('.kt') or file.endswith('.xml'):
                     replace_in_file(os.path.join(root, file), r'echo\.music\.iad1tya', 'com.maxrave')
 
     # Fix broken upstream imports in core submodule where it tries to use org.simpmusic instead of org.echomusic
     if os.path.exists('core'):
         for root, _, files in os.walk('core'):
             for file in files:
-                if file.endswith('.kt'):
+                if file.endswith('.kt') or file.endswith('.xml'):
                     filepath = os.path.join(root, file)
                     replace_in_file(filepath, r'org\.simpmusic\.cast', 'org.echomusic.cast')
                     replace_in_file(filepath, r'org\.simpmusic\.lastfm', 'org.echomusic.lastfm')
@@ -55,7 +55,7 @@ def main():
             continue
         for root, _, files in os.walk(root_dir):
             for file in files:
-                if file.endswith('.kt'):
+                if file.endswith('.kt') or file.endswith('.xml'):
                     filepath = os.path.join(root, file)
                     for pkg in ['domain', 'data', 'logger', 'common', 'ktorext', 'kizzy', 'spotify', 'kotlinytmusicscraper', 'media3']:
                         replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'com.maxrave.' + pkg)
