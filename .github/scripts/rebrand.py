@@ -30,65 +30,20 @@ def main():
     main_activity = 'androidApp/src/main/java/echo/music/iad1tya/MainActivity.kt'
     replace_in_file(main_activity, r'AppUpdateDialog\(\)', '')
 
-    # Fix broken upstream imports in master branch caused by migrating echo.music to com.maxrave
-    for broken_module in ['crashlytics', 'crashlytics-empty', 'cast', 'cast-empty', 'lastfm', 'lastfm-empty']:
-        # Fix namespace in build.gradle.kts
-        build_gradle = os.path.join(broken_module, 'build.gradle.kts')
-        if os.path.exists(build_gradle):
-            replace_in_file(build_gradle, r'echo\.music\.iad1tya', 'com.maxrave')
-            
-        for root, _, files in os.walk(broken_module):
-            for file in files:
-                if file.endswith('.kt') or file.endswith('.xml'):
-                    filepath = os.path.join(root, file)
-                    replace_in_file(filepath, r'echo\.music\.iad1tya', 'com.maxrave')
-                    
-                    # Fix missing Logger dependency by falling back to android.util.Log
-                    replace_in_file(filepath, r'import com\.maxrave\.logger\.Logger', 'import android.util.Log')
-                    replace_in_file(filepath, r'Logger\.d\(', 'Log.d(')
-                    replace_in_file(filepath, r'Logger\.e\(', 'Log.e(')
-                    replace_in_file(filepath, r'Logger\.i\(', 'Log.i(')
-
-    # Fix broken upstream imports in core submodule where it tries to use org.simpmusic instead of org.echomusic
-    if os.path.exists('core'):
-        for root, _, files in os.walk('core'):
-            for file in files:
-                if file.endswith('.kt') or file.endswith('.xml'):
-                    filepath = os.path.join(root, file)
-                    replace_in_file(filepath, r'org\.simpmusic\.cast', 'org.echomusic.cast')
-                    replace_in_file(filepath, r'org\.simpmusic\.lastfm', 'org.echomusic.lastfm')
-                    replace_in_file(filepath, r'org\.simpmusic\.crashlytics', 'org.echomusic.crashlytics')
-
-    # Fix the 420+ broken imports in composeApp and androidApp caused by the incomplete core extraction
-    for root_dir in ['composeApp', 'androidApp', 'app']:
-        if not os.path.exists(root_dir):
-            continue
-        for root, _, files in os.walk(root_dir):
-            for file in files:
-                if file.endswith('.kt') or file.endswith('.xml'):
-                    filepath = os.path.join(root, file)
-                    for pkg in ['domain', 'data', 'logger', 'common', 'ktorext', 'kizzy', 'spotify', 'kotlinytmusicscraper', 'media3']:
-                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'com.maxrave.' + pkg)
-                    for pkg in ['lyrics', 'aiservice']:
-                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'org.simpmusic.' + pkg)
-                    for pkg in ['lastfm', 'cast', 'crashlytics']:
-                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'org.echomusic.' + pkg)
-
     # Aggressive search for Support/Donation UI across all Kotlin Multiplatform UI files
     for root_dir in ['composeApp', 'app', 'core']:
-        if not os.path.exists(root_dir):
-            continue
-        for root, _, files in os.walk(root_dir):
-            for file in files:
-                if file.endswith('.kt'):
-                    filepath = os.path.join(root, file)
-                    # Remove Support/Sponsor sections
-                    replace_in_file(filepath, r'(?:Card|Column|Row|item|WelcomeSectionCard)\s*\([^)]*?(?:title|text)\s*=\s*"(?:Support|Sponsor|Donate|Buy me a coffee)[\s\S]*?(?=\n\s*(?:Card|Column|Row|item|WelcomeSectionCard|Spacer|Divider|fun|\}\s*\n))', '')
-                    # Change updater repo to the new fork
-                    replace_in_file(filepath, r'EchoMusicApp/Echo-Music', 'freeforwebsite/LYRA')
-                    replace_in_file(filepath, r'"app-universal-release\.apk"', '"lyra.apk"')
-                    replace_in_file(filepath, r'it\.name\s*==\s*"app-universal-release\.apk"', 'it.name == "lyra.apk"')
-                    replace_in_file(filepath, r'!it\.name\.contains\("debug",\s*ignoreCase\s*=\s*true\)', 'it.name == "lyra.apk"')
+        if os.path.exists(root_dir):
+            for root, _, files in os.walk(root_dir):
+                for file in files:
+                    if file.endswith('.kt'):
+                        filepath = os.path.join(root, file)
+                        # Remove Support/Sponsor sections
+                        replace_in_file(filepath, r'(?:Card|Column|Row|item|WelcomeSectionCard)\s*\([^)]*?(?:title|text)\s*=\s*"(?:Support|Sponsor|Donate|Buy me a coffee)[\s\S]*?(?=\n\s*(?:Card|Column|Row|item|WelcomeSectionCard|Spacer|Divider|fun|\}\s*\n))', '')
+                        # Change updater repo to the new fork
+                        replace_in_file(filepath, r'EchoMusicApp/Echo-Music', 'freeforwebsite/LYRA')
+                        replace_in_file(filepath, r'"app-universal-release\.apk"', '"lyra.apk"')
+                        replace_in_file(filepath, r'it\.name\s*==\s*"app-universal-release\.apk"', 'it.name == "lyra.apk"')
+                        replace_in_file(filepath, r'!it\.name\.contains\("debug",\s*ignoreCase\s*=\s*true\)', 'it.name == "lyra.apk"')
 
 if __name__ == '__main__':
     main()
