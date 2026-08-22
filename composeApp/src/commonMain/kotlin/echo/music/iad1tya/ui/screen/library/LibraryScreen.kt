@@ -58,9 +58,9 @@ import coil3.compose.AsyncImage
 import coil3.compose.LocalPlatformContext
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import echo.music.iad1tya.common.LibraryChipType
-import echo.music.iad1tya.domain.utils.LocalResource
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.LibraryChipType
+import com.maxrave.domain.utils.LocalResource
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.extension.copy
 import echo.music.iad1tya.extension.isScrollingUp
 import echo.music.iad1tya.ui.component.Chip

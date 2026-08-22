@@ -1,6 +1,6 @@
 package echo.music.iad1tya.extension
 
-import echo.music.iad1tya.domain.extension.decodeHtmlEntities
+import com.maxrave.domain.extension.decodeHtmlEntities
 
 /**
  * Represents a single word with its timing information for rich sync lyrics

@@ -25,7 +25,7 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.ui.theme.typo
 import org.jetbrains.compose.resources.stringResource
 import echomusic.composeapp.generated.resources.Res

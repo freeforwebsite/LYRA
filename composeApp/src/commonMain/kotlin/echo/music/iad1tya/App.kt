@@ -58,10 +58,10 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.window.core.layout.WindowSizeClass.Companion.WIDTH_DP_MEDIUM_LOWER_BOUND
 import coil3.toUri
-import echo.music.iad1tya.domain.data.player.GenericMediaItem
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.domain.manager.DataStoreManager.Values.TRUE
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.player.GenericMediaItem
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.domain.manager.DataStoreManager.Values.TRUE
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.expect.Orientation
 import echo.music.iad1tya.expect.currentOrientation
 import echo.music.iad1tya.expect.openUrl

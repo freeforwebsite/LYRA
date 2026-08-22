@@ -1,7 +1,7 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.domain.manager.DataStoreManager
+import com.maxrave.domain.manager.DataStoreManager
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

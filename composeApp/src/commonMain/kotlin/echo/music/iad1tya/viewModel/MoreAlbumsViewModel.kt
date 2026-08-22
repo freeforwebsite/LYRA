@@ -1,8 +1,8 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.domain.data.model.searchResult.albums.AlbumsResult
-import echo.music.iad1tya.domain.repository.AlbumRepository
+import com.maxrave.domain.data.model.searchResult.albums.AlbumsResult
+import com.maxrave.domain.repository.AlbumRepository
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

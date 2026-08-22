@@ -1,12 +1,12 @@
 package echo.music.iad1tya.extension
 
 import androidx.compose.runtime.Composable
-import echo.music.iad1tya.common.SponsorBlockType
-import echo.music.iad1tya.domain.data.model.browse.artist.ArtistBrowse
-import echo.music.iad1tya.domain.extension.now
-import echo.music.iad1tya.domain.utils.FilterState
-import echo.music.iad1tya.domain.utils.toTrack
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.SponsorBlockType
+import com.maxrave.domain.data.model.browse.artist.ArtistBrowse
+import com.maxrave.domain.extension.now
+import com.maxrave.domain.utils.FilterState
+import com.maxrave.domain.utils.toTrack
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.viewModel.ArtistScreenData
 import kotlinx.datetime.LocalDateTime
 import kotlinx.datetime.TimeZone

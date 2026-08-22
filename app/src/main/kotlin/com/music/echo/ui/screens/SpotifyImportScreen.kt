@@ -35,18 +35,18 @@ import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import echo.music.iad1tya.LocalPlayerAwareWindowInsets
 import echo.music.iad1tya.R
-import echo.music.iad1tya.spotifyimport.SpotifyImportViewModel
-import echo.music.iad1tya.spotifyimport.SpotifyImportUiState
-import echo.music.iad1tya.spotifyimport.SpotifyImportProgressUi
-import echo.music.iad1tya.spotifyimport.SpotifyImportSummaryUi
-import echo.music.iad1tya.spotifyimport.SpotifyImportSourceUi
-import echo.music.iad1tya.spotifyimport.SpotifyImportSourceType
+import com.maxrave.spotifyimport.SpotifyImportViewModel
+import com.maxrave.spotifyimport.SpotifyImportUiState
+import com.maxrave.spotifyimport.SpotifyImportProgressUi
+import com.maxrave.spotifyimport.SpotifyImportSummaryUi
+import com.maxrave.spotifyimport.SpotifyImportSourceUi
+import com.maxrave.spotifyimport.SpotifyImportSourceType
 import echo.music.iad1tya.ui.component.DefaultDialog
 import echo.music.iad1tya.ui.component.IconButton
 import echo.music.iad1tya.ui.component.Material3SettingsGroup
 import echo.music.iad1tya.ui.component.Material3SettingsItem
 import echo.music.iad1tya.ui.utils.backToMain
-import echo.music.iad1tya.spotify.SpotifyAuth
+import com.maxrave.spotify.SpotifyAuth
 import android.net.Uri
 
 @Composable

@@ -57,8 +57,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntSize
 import com.kmpalette.palette.graphics.Palette
-import echo.music.iad1tya.domain.data.model.ui.ScreenSizeInfo
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.model.ui.ScreenSizeInfo
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.getPlatform
 import echo.music.iad1tya.ui.theme.LocalAppColors
 import kotlinx.coroutines.runBlocking

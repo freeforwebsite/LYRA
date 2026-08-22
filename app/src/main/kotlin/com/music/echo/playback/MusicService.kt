@@ -156,7 +156,7 @@ import echo.music.iad1tya.extensions.toMediaItem
 import echo.music.iad1tya.extensions.toPersistQueue
 import echo.music.iad1tya.extensions.toQueue
 import echo.music.iad1tya.echomusic.updater.downloadmanager.EchoNotificationProvider
-import echo.music.iad1tya.lyrics.LyricsHelper
+import org.simpmusic.lyrics.LyricsHelper
 import echo.music.iad1tya.models.PersistPlayerState
 import echo.music.iad1tya.models.PersistQueue
 import echo.music.iad1tya.models.toMediaMetadata

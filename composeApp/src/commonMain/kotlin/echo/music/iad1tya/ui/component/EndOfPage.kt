@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import echo.music.iad1tya.domain.extension.now
+import com.maxrave.domain.extension.now
 import echo.music.iad1tya.ui.theme.typo
 import echo.music.iad1tya.utils.VersionManager
 import org.jetbrains.compose.resources.stringResource

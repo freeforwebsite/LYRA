@@ -4,7 +4,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
-import echo.music.iad1tya.domain.repository.SongRepository
+import com.maxrave.domain.repository.SongRepository
 import echo.music.iad1tya.pagination.RecentPagingSource
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 

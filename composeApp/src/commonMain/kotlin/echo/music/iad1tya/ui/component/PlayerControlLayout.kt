@@ -20,8 +20,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import echo.music.iad1tya.domain.mediaservice.handler.ControlState
-import echo.music.iad1tya.domain.mediaservice.handler.RepeatState
+import com.maxrave.domain.mediaservice.handler.ControlState
+import com.maxrave.domain.mediaservice.handler.RepeatState
 import echo.music.iad1tya.ui.icon.Pause
 import echo.music.iad1tya.ui.icon.PauseCircle
 import echo.music.iad1tya.ui.icon.PlayArrow

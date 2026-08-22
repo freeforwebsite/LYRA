@@ -65,7 +65,7 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import coil3.toBitmap
 import com.kmpalette.rememberPaletteState
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.expect.ui.toImageBitmap
 import echo.music.iad1tya.extension.getColorFromPalette
 import echo.music.iad1tya.extension.getScreenSizeInfo

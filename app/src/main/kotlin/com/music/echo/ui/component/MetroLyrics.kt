@@ -50,7 +50,7 @@ import androidx.compose.ui.unit.sp
 import echo.music.iad1tya.LocalPlayerConnection
 import echo.music.iad1tya.constants.AppleMusicLyricsBlurKey
 import echo.music.iad1tya.constants.LyricsRomanizeAsMainKey
-import echo.music.iad1tya.lyrics.LyricsEntry
+import org.simpmusic.lyrics.LyricsEntry
 import echo.music.iad1tya.ui.screens.settings.LyricsPosition
 import echo.music.iad1tya.utils.rememberPreference
 import kotlinx.coroutines.isActive

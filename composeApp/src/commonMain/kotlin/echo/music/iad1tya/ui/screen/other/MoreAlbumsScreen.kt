@@ -30,7 +30,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.ui.component.CenterLoadingBox
 import echo.music.iad1tya.ui.component.EndOfPage
 import echo.music.iad1tya.ui.component.HomeItemContentPlaylist

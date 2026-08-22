@@ -21,7 +21,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "echo.music.iad1tya"
+        applicationId = "com.music.lyra"
         minSdk = 26
         targetSdk = 36
         versionCode =

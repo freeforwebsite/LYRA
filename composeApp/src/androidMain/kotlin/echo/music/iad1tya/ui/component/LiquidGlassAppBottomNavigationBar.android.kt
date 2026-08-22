@@ -43,8 +43,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.currentBackStackEntryAsState
-import echo.music.iad1tya.domain.data.player.GenericMediaItem
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.player.GenericMediaItem
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.expect.ui.PlatformBackdrop
 import echo.music.iad1tya.ui.navigation.destination.home.AnalyticsDestination
 import echo.music.iad1tya.ui.navigation.destination.home.HomeDestination

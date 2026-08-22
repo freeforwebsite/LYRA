@@ -1,4 +1,4 @@
-package echo.music.iad1tya.cast
+package org.echomusic.cast
 
 /**
  * Stub CastOptionsProvider for F-Droid builds.

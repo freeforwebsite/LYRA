@@ -7,10 +7,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
-import echo.music.iad1tya.domain.data.model.metadata.Lyrics
-import echo.music.iad1tya.domain.data.model.streams.TimeLine
-import echo.music.iad1tya.media3.ui.MediaPlayerView
-import echo.music.iad1tya.media3.ui.MediaPlayerViewWithSubtitle
+import com.maxrave.domain.data.model.metadata.Lyrics
+import com.maxrave.domain.data.model.streams.TimeLine
+import com.maxrave.media3.ui.MediaPlayerView
+import com.maxrave.media3.ui.MediaPlayerViewWithSubtitle
 import echo.music.iad1tya.extension.findActivity
 import echo.music.iad1tya.extension.getScreenSizeInfo
 import echo.music.iad1tya.ui.theme.typo

@@ -67,9 +67,9 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import coil3.toBitmap
 import com.kmpalette.rememberPaletteState
-import echo.music.iad1tya.domain.data.model.browse.album.Track
-import echo.music.iad1tya.domain.utils.toSongEntity
-import echo.music.iad1tya.domain.utils.toTrack
+import com.maxrave.domain.data.model.browse.album.Track
+import com.maxrave.domain.utils.toSongEntity
+import com.maxrave.domain.utils.toTrack
 import echo.music.iad1tya.extension.angledGradientBackground
 import echo.music.iad1tya.extension.artworkScrimBrush
 import echo.music.iad1tya.extension.getColorFromPalette

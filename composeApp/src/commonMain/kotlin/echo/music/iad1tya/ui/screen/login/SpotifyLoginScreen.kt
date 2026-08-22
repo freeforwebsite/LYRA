@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
-import echo.music.iad1tya.common.Config
+import com.maxrave.common.Config
 import echo.music.iad1tya.expect.ui.PlatformWebView
 import echo.music.iad1tya.expect.ui.createWebViewCookieManager
 import echo.music.iad1tya.expect.ui.rememberWebViewState

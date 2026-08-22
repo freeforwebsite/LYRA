@@ -6,8 +6,8 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.logger.Logger
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import java.util.concurrent.TimeUnit

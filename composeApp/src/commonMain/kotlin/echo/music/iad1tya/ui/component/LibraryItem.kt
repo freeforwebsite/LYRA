@@ -40,21 +40,21 @@ import coil3.compose.LocalPlatformContext
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import echo.music.iad1tya.common.Config
-import echo.music.iad1tya.domain.data.entities.AlbumEntity
-import echo.music.iad1tya.domain.data.entities.ArtistEntity
-import echo.music.iad1tya.domain.data.entities.LocalPlaylistEntity
-import echo.music.iad1tya.domain.data.entities.PlaylistEntity
-import echo.music.iad1tya.domain.data.entities.PodcastsEntity
-import echo.music.iad1tya.domain.data.entities.SongEntity
-import echo.music.iad1tya.domain.data.model.browse.album.Track
-import echo.music.iad1tya.domain.data.model.searchResult.playlists.PlaylistsResult
-import echo.music.iad1tya.domain.data.type.LibraryType
-import echo.music.iad1tya.domain.data.type.PlaylistType
-import echo.music.iad1tya.domain.data.type.RecentlyType
-import echo.music.iad1tya.domain.mediaservice.handler.QueueData
-import echo.music.iad1tya.domain.utils.connectArtists
-import echo.music.iad1tya.domain.utils.toTrack
+import com.maxrave.common.Config
+import com.maxrave.domain.data.entities.AlbumEntity
+import com.maxrave.domain.data.entities.ArtistEntity
+import com.maxrave.domain.data.entities.LocalPlaylistEntity
+import com.maxrave.domain.data.entities.PlaylistEntity
+import com.maxrave.domain.data.entities.PodcastsEntity
+import com.maxrave.domain.data.entities.SongEntity
+import com.maxrave.domain.data.model.browse.album.Track
+import com.maxrave.domain.data.model.searchResult.playlists.PlaylistsResult
+import com.maxrave.domain.data.type.LibraryType
+import com.maxrave.domain.data.type.PlaylistType
+import com.maxrave.domain.data.type.RecentlyType
+import com.maxrave.domain.mediaservice.handler.QueueData
+import com.maxrave.domain.utils.connectArtists
+import com.maxrave.domain.utils.toTrack
 import echo.music.iad1tya.ui.navigation.destination.list.AlbumDestination
 import echo.music.iad1tya.ui.navigation.destination.list.ArtistDestination
 import echo.music.iad1tya.ui.navigation.destination.list.LocalPlaylistDestination
@@ -75,7 +75,7 @@ import echomusic.composeapp.generated.resources.no_favorite_playlists
 import echomusic.composeapp.generated.resources.no_playlists_downloaded
 import echomusic.composeapp.generated.resources.radio
 import echomusic.composeapp.generated.resources.recently_added
-import echo.music.iad1tya.domain.mediaservice.handler.PlaylistType as DomainPlaylistType
+import com.maxrave.domain.mediaservice.handler.PlaylistType as DomainPlaylistType
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

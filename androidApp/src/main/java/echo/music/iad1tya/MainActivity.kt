@@ -30,17 +30,17 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 
 import com.eygraber.uri.toKmpUriOrNull
-import echo.music.iad1tya.common.FIRST_TIME_MIGRATION
-import echo.music.iad1tya.common.SELECTED_LANGUAGE
-import echo.music.iad1tya.common.STATUS_DONE
-import echo.music.iad1tya.common.SUPPORTED_LANGUAGE
-import echo.music.iad1tya.common.SUPPORTED_LOCATION
-import echo.music.iad1tya.domain.data.model.intent.GenericIntent
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.domain.mediaservice.handler.MediaPlayerHandler
-import echo.music.iad1tya.domain.mediaservice.handler.ToastType
-import echo.music.iad1tya.logger.Logger
-import echo.music.iad1tya.media3.di.setServiceActivitySession
+import com.maxrave.common.FIRST_TIME_MIGRATION
+import com.maxrave.common.SELECTED_LANGUAGE
+import com.maxrave.common.STATUS_DONE
+import com.maxrave.common.SUPPORTED_LANGUAGE
+import com.maxrave.common.SUPPORTED_LOCATION
+import com.maxrave.domain.data.model.intent.GenericIntent
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.domain.mediaservice.handler.MediaPlayerHandler
+import com.maxrave.domain.mediaservice.handler.ToastType
+import com.maxrave.logger.Logger
+import com.maxrave.media3.di.setServiceActivitySession
 import echo.music.iad1tya.di.viewModelModule
 import echo.music.iad1tya.service.test.notification.NotifyWork
 import echo.music.iad1tya.utils.ComposeResUtils
@@ -211,27 +211,6 @@ class MainActivity : AppCompatActivity() {
         )
 
 
-        if (!EasyPermissions.hasPermissions(this, Manifest.permission.POST_NOTIFICATIONS)) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                val doNotAsk = getString("notification_permission_do_not_ask")
-                if (doNotAsk != "true") {
-                    val wasAsked = getString("notification_permission_asked")
-                    if (wasAsked != "true") {
-                        // First time: request system permission
-                        EasyPermissions.requestPermissions(
-                            this,
-                            runBlocking { ComposeResUtils.getResString(ComposeResUtils.StringType.NOTIFICATION_REQUEST) },
-                            1,
-                            Manifest.permission.POST_NOTIFICATIONS,
-                        )
-                        putString("notification_permission_asked", "true")
-                    } else {
-                        // Already asked before: show custom dialog with "Don't show again"
-                        viewModel.showNotificationPermissionDialog()
-                    }
-                }
-            }
-        }
         viewModel.getLocation()
 
 
@@ -262,7 +241,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startMusicService() {
 //        mediaPlayerHandler.startMediaService(this, serviceConnection)
-        echo.music.iad1tya.media3.di
+        com.maxrave.media3.di
             .startService(this@MainActivity, serviceConnection)
         mediaPlayerHandler.pushPlayerError = { it ->
             pushPlayerError(it)

@@ -107,7 +107,7 @@ import racra.compose.smooth_corner_rect_library.AbsoluteSmoothCornerShape
 import com.music.innertube.models.IpVersion
 import echo.music.iad1tya.constants.IpVersionKey
 
-import echo.music.iad1tya.lyrics.LyricsProviderRegistry
+import org.simpmusic.lyrics.LyricsProviderRegistry
 import echo.music.iad1tya.ui.component.DraggableLyricsProviderItem
 import echo.music.iad1tya.ui.component.DraggableLyricsProviderList
 import androidx.compose.runtime.mutableStateListOf

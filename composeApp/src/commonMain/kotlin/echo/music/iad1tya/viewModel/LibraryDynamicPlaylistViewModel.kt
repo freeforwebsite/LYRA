@@ -1,16 +1,16 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.common.Config
-import echo.music.iad1tya.common.Config.REMOVED_SONG_DATE_TIME
-import echo.music.iad1tya.domain.data.entities.ArtistEntity
-import echo.music.iad1tya.domain.data.entities.SongEntity
-import echo.music.iad1tya.domain.mediaservice.handler.PlaylistType
-import echo.music.iad1tya.domain.mediaservice.handler.QueueData
-import echo.music.iad1tya.domain.repository.ArtistRepository
-import echo.music.iad1tya.domain.repository.SongRepository
-import echo.music.iad1tya.domain.utils.toArrayListTrack
-import echo.music.iad1tya.domain.utils.toTrack
+import com.maxrave.common.Config
+import com.maxrave.common.Config.REMOVED_SONG_DATE_TIME
+import com.maxrave.domain.data.entities.ArtistEntity
+import com.maxrave.domain.data.entities.SongEntity
+import com.maxrave.domain.mediaservice.handler.PlaylistType
+import com.maxrave.domain.mediaservice.handler.QueueData
+import com.maxrave.domain.repository.ArtistRepository
+import com.maxrave.domain.repository.SongRepository
+import com.maxrave.domain.utils.toArrayListTrack
+import com.maxrave.domain.utils.toTrack
 import echo.music.iad1tya.ui.screen.library.LibraryDynamicPlaylistType
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

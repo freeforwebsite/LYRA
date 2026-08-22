@@ -1,6 +1,6 @@
 package echo.music.iad1tya.extension
 
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.logger.Logger
 
 fun levenshtein(
     lhs: CharSequence,

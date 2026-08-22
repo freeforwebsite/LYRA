@@ -27,7 +27,7 @@ import coil3.compose.LocalPlatformContext
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import echo.music.iad1tya.domain.data.model.podcast.PodcastBrowse
+import com.maxrave.domain.data.model.podcast.PodcastBrowse
 import echo.music.iad1tya.ui.icon.MoreVert
 import echo.music.iad1tya.ui.icon.echoIcons
 import echo.music.iad1tya.ui.theme.typo

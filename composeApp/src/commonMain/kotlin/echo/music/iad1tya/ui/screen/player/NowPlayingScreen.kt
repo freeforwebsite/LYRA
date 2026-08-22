@@ -121,10 +121,10 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import coil3.toBitmap
 import com.kmpalette.rememberPaletteState
-import echo.music.iad1tya.common.Config.MAIN_PLAYER
-import echo.music.iad1tya.domain.mediaservice.handler.MediaPlayerHandler
-import echo.music.iad1tya.domain.mediaservice.handler.RepeatState
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.Config.MAIN_PLAYER
+import com.maxrave.domain.mediaservice.handler.MediaPlayerHandler
+import com.maxrave.domain.mediaservice.handler.RepeatState
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.Platform
 import echo.music.iad1tya.expect.toggleMiniPlayer
 import echo.music.iad1tya.expect.ui.MediaPlayerView

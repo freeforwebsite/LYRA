@@ -9,8 +9,8 @@ import androidx.lifecycle.viewModelScope
 import echo.music.iad1tya.db.MusicDatabase
 import echo.music.iad1tya.db.entities.LyricsEntity
 import echo.music.iad1tya.db.entities.Song
-import echo.music.iad1tya.lyrics.LyricsHelper
-import echo.music.iad1tya.lyrics.LyricsResult
+import org.simpmusic.lyrics.LyricsHelper
+import org.simpmusic.lyrics.LyricsResult
 import echo.music.iad1tya.models.MediaMetadata
 import echo.music.iad1tya.utils.NetworkConnectivityObserver
 import dagger.hilt.android.lifecycle.HiltViewModel

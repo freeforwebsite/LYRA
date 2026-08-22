@@ -17,9 +17,9 @@ import coil3.disk.DiskCache
 import coil3.network.okhttp.OkHttpNetworkFetcherFactory
 import coil3.request.CachePolicy
 import coil3.request.crossfade
-import echo.music.iad1tya.data.di.loader.loadAllModules
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.data.di.loader.loadAllModules
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.di.viewModelModule
 import echo.music.iad1tya.service.backup.AutoBackupScheduler
 import kotlinx.coroutines.CoroutineScope

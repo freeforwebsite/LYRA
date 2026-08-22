@@ -3,8 +3,8 @@ package echo.music.iad1tya.expect.ui
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
-import echo.music.iad1tya.domain.data.model.metadata.Lyrics
-import echo.music.iad1tya.domain.data.model.streams.TimeLine
+import com.maxrave.domain.data.model.metadata.Lyrics
+import com.maxrave.domain.data.model.streams.TimeLine
 
 @Composable
 expect fun MediaPlayerView(

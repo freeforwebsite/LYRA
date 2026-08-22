@@ -85,10 +85,10 @@ import coil3.request.crossfade
 import coil3.toBitmap
 import com.kyant.backdrop.highlight.Highlight
 import com.kmpalette.rememberPaletteState
-import echo.music.iad1tya.domain.data.entities.DownloadState
-import echo.music.iad1tya.domain.data.model.browse.album.Track
-import echo.music.iad1tya.domain.utils.toSongEntity
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.entities.DownloadState
+import com.maxrave.domain.data.model.browse.album.Track
+import com.maxrave.domain.utils.toSongEntity
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.ui.component.rememberHolderPainter
 import echo.music.iad1tya.expect.ui.layerBackdrop
 import echo.music.iad1tya.expect.ui.rememberBackdrop

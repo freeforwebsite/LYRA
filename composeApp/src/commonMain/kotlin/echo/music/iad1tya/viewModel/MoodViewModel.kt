@@ -1,12 +1,12 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.common.SELECTED_LANGUAGE
-import echo.music.iad1tya.domain.data.model.mood.moodmoments.MoodsMomentObject
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.domain.repository.HomeRepository
-import echo.music.iad1tya.domain.utils.Resource
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.SELECTED_LANGUAGE
+import com.maxrave.domain.data.model.mood.moodmoments.MoodsMomentObject
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.domain.repository.HomeRepository
+import com.maxrave.domain.utils.Resource
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

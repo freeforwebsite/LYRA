@@ -1,4 +1,4 @@
-package echo.music.iad1tya.lyrics
+package org.simpmusic.lyrics
 
 import android.content.Context
 import com.music.echo.unison.Unison

@@ -1,8 +1,8 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.domain.repository.ImportProgress
-import echo.music.iad1tya.domain.repository.ImportRepository
+import com.maxrave.domain.repository.ImportProgress
+import com.maxrave.domain.repository.ImportRepository
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import com.mohamedrejeb.calf.core.PlatformContext
 import com.mohamedrejeb.calf.io.KmpFile

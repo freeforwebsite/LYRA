@@ -1,4 +1,4 @@
-package echo.music.iad1tya.data
+package com.maxrave.data
 
 import echo.music.iad1tya.models.SponsorBlockSegment
 import kotlinx.coroutines.Dispatchers

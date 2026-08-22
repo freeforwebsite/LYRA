@@ -199,7 +199,7 @@
     <string name="what_segments_will_be_skipped">Кой сегмент ще бъде прескочен</string>
     <string name="save">Запази</string>
     <string name="saved">Запазено</string>
-    <string name="sponsor_block_intro">SponsorBlock е система за прескачане на досадни части от YouTube видеа.\nЗа повече информация: https://sponsor.ajay.app/\nIn EchoMusic, SponsorBlock е наличен когато устройството е на линия</string>
+    <string name="sponsor_block_intro">SponsorBlock е система за прескачане на досадни части от YouTube видеа.\nЗа повече информация: https://sponsor.ajay.app/\nIn LYRA, SponsorBlock е наличен когато устройството е на линия</string>
     <string name="skip_sponsor_part_of_video">Прескачане на спонсорираната част</string>
     <string name="customactivityoncrash_error_activity_error_occurred_explanation">Появи се непредвидена грешка. Извиняваме се за неудобството.</string>
     <string name="customactivityoncrash_error_activity_restart_app">Рестартирай приложението</string>

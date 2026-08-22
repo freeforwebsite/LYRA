@@ -13,7 +13,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import com.materialkolor.PaletteStyle
 import com.materialkolor.rememberDynamicColorScheme
-import echo.music.iad1tya.domain.manager.DataStoreManager
+import com.maxrave.domain.manager.DataStoreManager
 import echo.music.iad1tya.expect.ui.SystemBarAppearanceEffect
 import echo.music.iad1tya.expect.ui.platformDynamicColorScheme
 

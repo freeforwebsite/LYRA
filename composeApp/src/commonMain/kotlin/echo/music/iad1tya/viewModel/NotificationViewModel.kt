@@ -1,8 +1,8 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.domain.data.entities.NotificationEntity
-import echo.music.iad1tya.domain.repository.CommonRepository
+import com.maxrave.domain.data.entities.NotificationEntity
+import com.maxrave.domain.repository.CommonRepository
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

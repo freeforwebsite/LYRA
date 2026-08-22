@@ -1,6 +1,6 @@
 
 
-package echo.music.iad1tya.lyrics
+package org.simpmusic.lyrics
 import echo.music.iad1tya.R
 
 import android.content.Context

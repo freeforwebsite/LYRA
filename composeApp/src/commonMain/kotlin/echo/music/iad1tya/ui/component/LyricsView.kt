@@ -88,7 +88,7 @@ import coil3.compose.LocalPlatformContext
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import echo.music.iad1tya.domain.data.model.streams.TimeLine
+import com.maxrave.domain.data.model.streams.TimeLine
 import echo.music.iad1tya.extension.KeepScreenOn
 import echo.music.iad1tya.extension.ParsedRichSyncLine
 import echo.music.iad1tya.extension.animateScrollAndCentralizeItem
@@ -170,8 +170,8 @@ private fun List<TimedLineIndex>.activeIndexAt(nowMs: Long): Int {
  * Lines with invalid `startTimeMs` on either side are skipped.
  */
 private fun buildSyncedTranslatedWordsByLineIndex(
-    originalLines: List<echo.music.iad1tya.domain.data.model.metadata.Line>,
-    translatedLines: List<echo.music.iad1tya.domain.data.model.metadata.Line>,
+    originalLines: List<com.maxrave.domain.data.model.metadata.Line>,
+    translatedLines: List<com.maxrave.domain.data.model.metadata.Line>,
     thresholdMs: Long = 1000L,
 ): Map<Int, String> {
     if (originalLines.isEmpty() || translatedLines.isEmpty()) return emptyMap()

@@ -1,6 +1,6 @@
 package echo.music.iad1tya.ui.screen.player
 
-import echo.music.iad1tya.domain.data.model.browse.album.Track
+import com.maxrave.domain.data.model.browse.album.Track
 
 /**
  * Pure helpers for the Spotify-style artwork pager on [NowPlayingScreen].

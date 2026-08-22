@@ -5,7 +5,7 @@
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
 
-package echo.music.iad1tya.spotifyimport
+package com.maxrave.spotifyimport
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit
@@ -35,12 +35,12 @@ import com.music.innertube.YouTube
 import com.music.innertube.models.SongItem
 import echo.music.iad1tya.models.MediaMetadata
 import echo.music.iad1tya.models.toMediaMetadata
-import echo.music.iad1tya.spotify.Spotify
-import echo.music.iad1tya.spotify.SpotifyAuth
-import echo.music.iad1tya.spotify.SpotifyMapper
-import echo.music.iad1tya.spotify.models.SpotifyPlaylist
-import echo.music.iad1tya.spotify.models.SpotifyPlaylistTracksRef
-import echo.music.iad1tya.spotify.models.SpotifyTrack
+import com.maxrave.spotify.Spotify
+import com.maxrave.spotify.SpotifyAuth
+import com.maxrave.spotify.SpotifyMapper
+import com.maxrave.spotify.models.SpotifyPlaylist
+import com.maxrave.spotify.models.SpotifyPlaylistTracksRef
+import com.maxrave.spotify.models.SpotifyTrack
 import echo.music.iad1tya.utils.clearWebAuthSession
 import echo.music.iad1tya.utils.dataStore
 import echo.music.iad1tya.utils.reportException

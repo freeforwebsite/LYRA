@@ -6,7 +6,7 @@ import androidx.media3.common.Player
 import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.logger.Logger
 
 private const val TAG = "Cast"
 

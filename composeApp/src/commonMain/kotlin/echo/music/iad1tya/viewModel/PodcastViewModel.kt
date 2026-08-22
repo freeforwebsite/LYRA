@@ -1,16 +1,16 @@
 package echo.music.iad1tya.viewModel
 
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.common.Config
-import echo.music.iad1tya.domain.data.entities.EpisodeEntity
-import echo.music.iad1tya.domain.data.entities.PodcastsEntity
-import echo.music.iad1tya.domain.data.model.podcast.PodcastBrowse
-import echo.music.iad1tya.domain.data.model.searchResult.songs.Artist
-import echo.music.iad1tya.domain.mediaservice.handler.PlaylistType
-import echo.music.iad1tya.domain.mediaservice.handler.QueueData
-import echo.music.iad1tya.domain.repository.PodcastRepository
-import echo.music.iad1tya.domain.utils.Resource
-import echo.music.iad1tya.domain.utils.toTrack
+import com.maxrave.common.Config
+import com.maxrave.domain.data.entities.EpisodeEntity
+import com.maxrave.domain.data.entities.PodcastsEntity
+import com.maxrave.domain.data.model.podcast.PodcastBrowse
+import com.maxrave.domain.data.model.searchResult.songs.Artist
+import com.maxrave.domain.mediaservice.handler.PlaylistType
+import com.maxrave.domain.mediaservice.handler.QueueData
+import com.maxrave.domain.repository.PodcastRepository
+import com.maxrave.domain.utils.Resource
+import com.maxrave.domain.utils.toTrack
 import echo.music.iad1tya.expect.shareUrl
 import echo.music.iad1tya.viewModel.base.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

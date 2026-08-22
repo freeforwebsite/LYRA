@@ -61,7 +61,7 @@ import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
-import echo.music.iad1tya.common.Config.MAIN_PLAYER
+import com.maxrave.common.Config.MAIN_PLAYER
 import echo.music.iad1tya.expect.ui.MediaPlayerViewWithSubtitle
 import echo.music.iad1tya.extension.artworkScrimBrush
 import echo.music.iad1tya.extension.formatDuration

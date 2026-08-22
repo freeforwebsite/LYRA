@@ -78,7 +78,7 @@ import echo.music.iad1tya.constants.AutoTranslateKey
 import echo.music.iad1tya.constants.OpenRouterBaseUrlKey
 import echo.music.iad1tya.constants.OpenRouterModelKey
 import echo.music.iad1tya.constants.DeeplFormalityKey
-import echo.music.iad1tya.lyrics.LyricsTranslationHelper
+import org.simpmusic.lyrics.LyricsTranslationHelper
 import echo.music.iad1tya.utils.rememberPreference
 import androidx.compose.runtime.collectAsState
 

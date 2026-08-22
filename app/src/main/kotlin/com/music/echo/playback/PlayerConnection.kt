@@ -33,7 +33,7 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 import echo.music.iad1tya.constants.SponsorBlockEnabledKey
 import echo.music.iad1tya.utils.dataStore
-import echo.music.iad1tya.data.SponsorBlockRepository
+import com.maxrave.data.SponsorBlockRepository
 import echo.music.iad1tya.models.SponsorBlockSegment
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.map

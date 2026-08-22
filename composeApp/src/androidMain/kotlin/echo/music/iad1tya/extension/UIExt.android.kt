@@ -18,8 +18,8 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalView
 import androidx.core.app.PictureInPictureModeChangedInfo
 import androidx.core.util.Consumer
-import echo.music.iad1tya.domain.data.model.ui.ScreenSizeInfo
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.model.ui.ScreenSizeInfo
+import com.maxrave.logger.Logger
 
 fun Context.getActivityOrNull(): Activity? {
     var context = this

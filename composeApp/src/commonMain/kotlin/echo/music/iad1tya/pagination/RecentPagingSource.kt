@@ -2,7 +2,7 @@ package echo.music.iad1tya.pagination
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import echo.music.iad1tya.domain.repository.SongRepository
+import com.maxrave.domain.repository.SongRepository
 import kotlinx.coroutines.delay
 
 class RecentPagingSource(

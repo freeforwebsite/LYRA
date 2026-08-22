@@ -27,8 +27,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import echo.music.iad1tya.common.Config
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.Config
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.expect.ui.PlatformWebView
 import echo.music.iad1tya.expect.ui.createWebViewCookieManager
 import echo.music.iad1tya.expect.ui.rememberWebViewState

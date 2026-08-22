@@ -2,10 +2,10 @@ package echo.music.iad1tya.viewModel.base
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import echo.music.iad1tya.domain.mediaservice.handler.MediaPlayerHandler
-import echo.music.iad1tya.domain.mediaservice.handler.QueueData
-import echo.music.iad1tya.logger.LogLevel
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.mediaservice.handler.MediaPlayerHandler
+import com.maxrave.domain.mediaservice.handler.QueueData
+import com.maxrave.logger.LogLevel
+import com.maxrave.logger.Logger
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

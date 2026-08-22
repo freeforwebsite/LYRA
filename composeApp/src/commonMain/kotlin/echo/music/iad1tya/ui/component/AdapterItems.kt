@@ -57,33 +57,33 @@ import coil3.compose.LocalPlatformContext
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
-import echo.music.iad1tya.common.Config
-import echo.music.iad1tya.domain.data.entities.AlbumEntity
-import echo.music.iad1tya.domain.data.entities.LocalPlaylistEntity
-import echo.music.iad1tya.domain.data.entities.PlaylistEntity
-import echo.music.iad1tya.domain.data.entities.PodcastsEntity
-import echo.music.iad1tya.domain.data.model.browse.album.Track
-import echo.music.iad1tya.domain.data.model.browse.artist.ResultAlbum
-import echo.music.iad1tya.domain.data.model.browse.artist.ResultPlaylist
-import echo.music.iad1tya.domain.data.model.browse.artist.ResultSingle
-import echo.music.iad1tya.domain.data.model.home.Content
-import echo.music.iad1tya.domain.data.model.home.HomeItem
-import echo.music.iad1tya.domain.data.model.home.chart.ItemArtist
-import echo.music.iad1tya.domain.data.model.home.chart.ItemVideo
-import echo.music.iad1tya.domain.data.model.mood.genre.ItemsPlaylist
-import echo.music.iad1tya.domain.data.model.mood.moodmoments.Item
-import echo.music.iad1tya.domain.data.model.searchResult.albums.AlbumsResult
-import echo.music.iad1tya.domain.data.model.searchResult.playlists.PlaylistsResult
-import echo.music.iad1tya.domain.data.model.searchResult.songs.Artist
-import echo.music.iad1tya.domain.data.type.ChartItem
-import echo.music.iad1tya.domain.data.type.HomeContentType
-import echo.music.iad1tya.domain.mediaservice.handler.PlaylistType
-import echo.music.iad1tya.domain.mediaservice.handler.QueueData
-import echo.music.iad1tya.domain.utils.connectArtists
-import echo.music.iad1tya.domain.utils.toListName
-import echo.music.iad1tya.domain.utils.toSongEntity
-import echo.music.iad1tya.domain.utils.toTrack
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.common.Config
+import com.maxrave.domain.data.entities.AlbumEntity
+import com.maxrave.domain.data.entities.LocalPlaylistEntity
+import com.maxrave.domain.data.entities.PlaylistEntity
+import com.maxrave.domain.data.entities.PodcastsEntity
+import com.maxrave.domain.data.model.browse.album.Track
+import com.maxrave.domain.data.model.browse.artist.ResultAlbum
+import com.maxrave.domain.data.model.browse.artist.ResultPlaylist
+import com.maxrave.domain.data.model.browse.artist.ResultSingle
+import com.maxrave.domain.data.model.home.Content
+import com.maxrave.domain.data.model.home.HomeItem
+import com.maxrave.domain.data.model.home.chart.ItemArtist
+import com.maxrave.domain.data.model.home.chart.ItemVideo
+import com.maxrave.domain.data.model.mood.genre.ItemsPlaylist
+import com.maxrave.domain.data.model.mood.moodmoments.Item
+import com.maxrave.domain.data.model.searchResult.albums.AlbumsResult
+import com.maxrave.domain.data.model.searchResult.playlists.PlaylistsResult
+import com.maxrave.domain.data.model.searchResult.songs.Artist
+import com.maxrave.domain.data.type.ChartItem
+import com.maxrave.domain.data.type.HomeContentType
+import com.maxrave.domain.mediaservice.handler.PlaylistType
+import com.maxrave.domain.mediaservice.handler.QueueData
+import com.maxrave.domain.utils.connectArtists
+import com.maxrave.domain.utils.toListName
+import com.maxrave.domain.utils.toSongEntity
+import com.maxrave.domain.utils.toTrack
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.Platform
 import echo.music.iad1tya.expect.ui.HorizontalScrollBar
 import echo.music.iad1tya.getPlatform
@@ -331,8 +331,8 @@ fun HomeItemContentPlaylist(
             val thumb =
                 when (data) {
                     is Content -> data.thumbnails.lastOrNull()?.url
-                    is echo.music.iad1tya.domain.data.model.mood.genre.Content -> data.thumbnail?.lastOrNull()?.url
-                    is echo.music.iad1tya.domain.data.model.mood.moodmoments.Content -> data.thumbnails?.lastOrNull()?.url
+                    is com.maxrave.domain.data.model.mood.genre.Content -> data.thumbnail?.lastOrNull()?.url
+                    is com.maxrave.domain.data.model.mood.moodmoments.Content -> data.thumbnails?.lastOrNull()?.url
                     is LocalPlaylistEntity -> data.thumbnail
                     is ChartItem -> null
                     is PlaylistsResult -> data.thumbnails.lastOrNull()?.url
@@ -412,8 +412,8 @@ fun HomeItemContentPlaylist(
                 text =
                     when (data) {
                         is Content -> data.title
-                        is echo.music.iad1tya.domain.data.model.mood.genre.Content -> data.title.title
-                        is echo.music.iad1tya.domain.data.model.mood.moodmoments.Content -> data.title
+                        is com.maxrave.domain.data.model.mood.genre.Content -> data.title.title
+                        is com.maxrave.domain.data.model.mood.moodmoments.Content -> data.title
                         is LocalPlaylistEntity -> data.title
                         is ChartItem -> data.name
                         is PlaylistsResult -> data.title
@@ -456,11 +456,11 @@ fun HomeItemContentPlaylist(
                                 }
                         }
 
-                        is echo.music.iad1tya.domain.data.model.mood.genre.Content -> {
+                        is com.maxrave.domain.data.model.mood.genre.Content -> {
                             data.title.subtitle
                         }
 
-                        is echo.music.iad1tya.domain.data.model.mood.moodmoments.Content -> {
+                        is com.maxrave.domain.data.model.mood.moodmoments.Content -> {
                             data.subtitle
                         }
 
@@ -1293,7 +1293,7 @@ fun MoodAndGenresContentItem(
                 HomeItemContentPlaylist(onClick = {
                     // The "Songs" shelf mixes tracks into a list that is otherwise all playlists,
                     // so route by videoId: a track starts its radio, everything else opens a page.
-                    val moodSong = item as? echo.music.iad1tya.domain.data.model.mood.moodmoments.Content
+                    val moodSong = item as? com.maxrave.domain.data.model.mood.moodmoments.Content
                     val songVideoId = moodSong?.videoId
                     if (moodSong != null && songVideoId != null) {
                         val track =
@@ -1328,10 +1328,10 @@ fun MoodAndGenresContentItem(
                         navController.navigate(
                             PlaylistDestination(
                                 playlistId =
-                                    if (item is echo.music.iad1tya.domain.data.model.mood.genre.Content) {
+                                    if (item is com.maxrave.domain.data.model.mood.genre.Content) {
                                         item.playlistBrowseId
                                     } else {
-                                        (item as echo.music.iad1tya.domain.data.model.mood.moodmoments.Content).playlistBrowseId
+                                        (item as com.maxrave.domain.data.model.mood.moodmoments.Content).playlistBrowseId
                                     },
                             ),
                         )

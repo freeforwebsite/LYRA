@@ -107,10 +107,10 @@ import coil3.compose.LocalPlatformContext
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.kmpalette.rememberPaletteState
-import echo.music.iad1tya.domain.data.entities.SongEntity
-import echo.music.iad1tya.domain.manager.DataStoreManager
-import echo.music.iad1tya.domain.utils.connectArtists
-import echo.music.iad1tya.logger.Logger
+import com.maxrave.domain.data.entities.SongEntity
+import com.maxrave.domain.manager.DataStoreManager
+import com.maxrave.domain.utils.connectArtists
+import com.maxrave.logger.Logger
 import echo.music.iad1tya.Platform
 import echo.music.iad1tya.expect.toggleMiniPlayer
 import echo.music.iad1tya.expect.ui.PlatformBackdrop

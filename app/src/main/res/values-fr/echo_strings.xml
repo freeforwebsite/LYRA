@@ -422,7 +422,7 @@
     <string name="wrapped_total_artists_subtitle">artistes uniques</string>
     <string name="wrapped_total_songs_title">Vous avez écouté</string>
     <string name="wrapped_total_songs_subtitle">titres uniques</string>
-    <string name="wrapped_intro_title">Echo Music</string>
+    <string name="wrapped_intro_title">LYRA</string>
     <string name="wrapped_intro_subtitle">Il est temps de découvrir ce que vous avez écouté</string>
     <string name="wrapped_intro_button">C\'est parti !</string>
     <string name="wrapped_end_thanks">Merci d\'avoir écouté Echo Music !</string>
