@@ -49,6 +49,21 @@ def main():
                     replace_in_file(filepath, r'org\.simpmusic\.lastfm', 'org.echomusic.lastfm')
                     replace_in_file(filepath, r'org\.simpmusic\.crashlytics', 'org.echomusic.crashlytics')
 
+    # Fix the 420+ broken imports in composeApp and androidApp caused by the incomplete core extraction
+    for root_dir in ['composeApp', 'androidApp', 'app']:
+        if not os.path.exists(root_dir):
+            continue
+        for root, _, files in os.walk(root_dir):
+            for file in files:
+                if file.endswith('.kt'):
+                    filepath = os.path.join(root, file)
+                    for pkg in ['domain', 'data', 'logger', 'common', 'ktorext', 'kizzy', 'spotify', 'kotlinytmusicscraper', 'media3']:
+                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'com.maxrave.' + pkg)
+                    for pkg in ['lyrics', 'aiservice']:
+                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'org.simpmusic.' + pkg)
+                    for pkg in ['lastfm', 'cast', 'crashlytics']:
+                        replace_in_file(filepath, r'echo\.music\.iad1tya\.' + pkg, 'org.echomusic.' + pkg)
+
     # Aggressive search for Support/Donation UI across all Kotlin Multiplatform UI files
     for root_dir in ['composeApp', 'app', 'core']:
         if not os.path.exists(root_dir):
