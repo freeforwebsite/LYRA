@@ -53,8 +53,8 @@ jobs:
       - name: Prepare APK for Release
         working-directory: upstream_src
         run: |
-          find androidApp/build/outputs/apk/debug/ -name "*.apk" -exec cp {} lyra.apk \;
-          find app/build/outputs/apk/debug/ -name "*.apk" -exec cp {} lyra.apk \;
+          find androidApp/build/outputs/apk/debug/ -name "*.apk" -exec cp {} lyra.apk \; || true
+          find app/build/outputs/apk/debug/ -name "*.apk" -exec cp {} lyra.apk \; || true
         
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
