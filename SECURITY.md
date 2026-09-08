@@ -14,7 +14,7 @@ We release patches for security vulnerabilities in the following versions:
 If you discover a security vulnerability in Lyra Music, please report it responsibly:
 
 1. **Do NOT** create a public GitHub issue
-2. Contact the repository maintainers privately.
+2. Contact freeforwebsitein@gmail.com privately.
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce
@@ -62,3 +62,4 @@ For security-related questions or to report vulnerabilities:
 - GitHub: Create a private security advisory
 
 Thank you for helping keep Lyra Music secure!
+

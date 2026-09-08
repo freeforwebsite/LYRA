@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/Echo-new.png" alt="Lyra Music Logo" width="120"/>
+  <img src="assets/Lyra-logo.png" alt="Lyra Music Logo" width="120"/>
 
   <h1>Lyra Music</h1>
 
@@ -239,5 +239,6 @@ Because we do not host any media files, we cannot process DMCA takedown requests
 <div align="center">
   <p>Licensed under <a href="LICENSE">GPL-3.0</a></p>
 </div>
+
 
 
