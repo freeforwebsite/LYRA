@@ -55,8 +55,8 @@ Lyra Music delivers a seamless, premium listening experience by leveraging YouTu
         <img src="Screenshots/sc_5.png" alt="Music Library" width="220" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/>
       </td>
       <td align="center" style="padding: 15px; border: none;">
-        <b>Echo Find (Recognition)</b><br><br>
-        <img src="Screenshots/sc_6.png" alt="Echo Find" width="220" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/>
+        <b>lyra Find (Recognition)</b><br><br>
+        <img src="Screenshots/sc_6.png" alt="lyra Find" width="220" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/>
       </td>
     </tr>
   </table>
@@ -94,11 +94,11 @@ Lyra Music delivers a seamless, premium listening experience by leveraging YouTu
 </details>
 
 <details>
-<summary><b>Discovery & Echo Find</b></summary>
+<summary><b>Discovery & lyra Find</b></summary>
 <br>
 
-- **Echo Find** — Identify songs playing around you using advanced audio recognition.
-- **Echo Brain** — An intelligent, on-device engine that analyzes your listening momentum and auto-injects perfectly aligned tracks into your queue. Read more in the [Echo Brain Documentation](ECHO_BRAIN_DOCS.md).
+- **lyra Find** — Identify songs playing around you using advanced audio recognition.
+- **lyra Brain** — An intelligent, on-device engine that analyzes your listening momentum and auto-injects perfectly aligned tracks into your queue. Read more in the [lyra Brain Documentation](lyra_BRAIN_DOCS.md).
 - **Smart Recommendations** — Personalized suggestions based on your listening history.
 - **Comprehensive Browsing** — Explore Charts, Podcasts, Moods, and Genres.
 
@@ -152,7 +152,7 @@ Lyra Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ### Android Installation
 
-Download the latest pre-compiled APK from the [Releases Page](https://github.com/EchoMusicApp/LYRA/releases/latest).
+Download the latest pre-compiled APK from the [Releases Page](https://github.com/lyraMusicApp/LYRA/releases/latest).
 
 <details>
 <summary><b>Building from Source</b></summary>
@@ -169,7 +169,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
    Create a `local.properties` file:
 
    ```bash
-   echo "sdk.dir=/path/to/your/android/sdk" > local.properties
+   lyra "sdk.dir=/path/to/your/android/sdk" > local.properties
    ```
 
    _(For detailed paths on Windows/macOS/Linux, refer to [SETUP.md](SETUP.md))_
@@ -205,7 +205,7 @@ Lyra Music stands on the shoulders of several excellent open-source projects. Si
 | **[ArchiveTune](https://github.com/koiverse/ArchiveTune)**                                                                | Material You UI inspiration                         |
 | **[Better Lyrics](https://better-lyrics.boidu.dev/)**                                                                     | Lyrics enhancement and synchronization              |
 | **[SimpMusic](https://github.com/maxrave-dev/SimpMusic)**                                                                 | Lyrics implementation reference                     |
-| **[Music Recognizer](https://github.com/aleksey-saenko/MusicRecognizer)**                                                 | Audio recognition (Echo Find)                       |
+| **[Music Recognizer](https://github.com/aleksey-saenko/MusicRecognizer)**                                                 | Audio recognition (lyra Find)                       |
 | **[BravePipe](https://github.com/bravepipeproject/BravePipe)**                                                            | Decryption handling and backup playback engine      |
 
 ---
