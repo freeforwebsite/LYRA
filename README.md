@@ -16,9 +16,6 @@ Lyra Music delivers a seamless, premium listening experience by leveraging YouTu
 > **In-app OTA updates have been permanently removed.** Please update manually via the website. Lyra Music is completely free and ad-free; the few ads shown during a manual download help support the ongoing development of this project. Please do not open issues requesting to bring this back. Thank you for your support!
 
 ---
-
-- **Discord**: [Join the Lyra Music Discord server](https://discord.gg/Xt5hgsJJuA)
-
 ---
 
 ## Table of Contents
@@ -26,8 +23,6 @@ Lyra Music delivers a seamless, premium listening experience by leveraging YouTu
 - [Overview](#overview)
 - [Screenshots](#screenshots)
 - [Features](#features)
-- [Installation & Setup](#installation--setup)
-- [Contributors](#contributors)
 - [Special Thanks](#special-thanks)
 
 ---
@@ -166,7 +161,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/iad1tya/LYRA.git
+   git clone https://github.com/freeforwebsite/LYRA.git
    cd LYRA
    ```
 
@@ -197,19 +192,6 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
    _(For optimized ARM64 builds, release builds, or other options, refer to [SETUP.md](SETUP.md))_
 
 </details>
-
----
-
-## Contributors
-
-Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Lyra Music!
-
-<!-- readme: contributors -start -->
-<table>
-<tr><td align="center"><a href="https://github.com/iad1tya"><img src="https://avatars.githubusercontent.com/u/147871321?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/mdakashhossain1"><img src="https://avatars.githubusercontent.com/u/85729564?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/tasteofkaruvadu"><img src="https://avatars.githubusercontent.com/u/295890497?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/kaunkrishna"><img src="https://avatars.githubusercontent.com/u/270065466?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/soumya-99"><img src="https://avatars.githubusercontent.com/u/59480692?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/VardhmanSurana"><img src="https://avatars.githubusercontent.com/u/100058534?v=4" width="60" height="60" /></a></td></tr>
-</table>
-<!-- readme: contributors -end -->
-
 
 ---
 
