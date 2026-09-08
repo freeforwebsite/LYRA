@@ -89,7 +89,7 @@ fun WelcomeDialog(
                     )
                 }
 
-                WelcomeSectionCard(title = "Support Echo") {
+                WelcomeSectionCard(title = "Support Lyra") {
                     WelcomeActionRow(
                         icon = painterResource(R.drawable.coffee),
                         title = "Buy Me a Coffee",
@@ -124,7 +124,7 @@ fun WelcomeDialog(
                 Spacer(modifier = Modifier.height(4.dp))
 
                 Button(
-                    onClick = { uriHandler.openUri("https://github.com/EchoMusicApp/Echo-Music") },
+                    onClick = { uriHandler.openUri("https://github.com/freeforwebsite/LYRA") },
                     modifier = Modifier.fillMaxWidth().height(50.dp),
                     shape = RoundedCornerShape(16.dp),
                     colors = ButtonDefaults.buttonColors(
@@ -185,7 +185,7 @@ private fun WelcomeAppCard() {
             )
             Spacer(Modifier.height(4.dp))
             Text(
-                text = "Echo Music",
+                text = "Lyra Music",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface,

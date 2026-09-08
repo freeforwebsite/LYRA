@@ -187,8 +187,8 @@ highlightKey: String? = null) {
                     AboutActionRow(
                         icon = painterResource(R.drawable.github),
                         title = "GitHub",
-                        subtitle = "EchoMusicApp/Echo-Music",
-                        onClick = { uriHandler.openUri("https://github.com/EchoMusicApp/Echo-Music") },
+                        subtitle = "freeforwebsite/LYRA",
+                        onClick = { uriHandler.openUri("https://github.com/freeforwebsite/LYRA") },
                     )
                     AboutDivider()
                     AboutActionRow(
@@ -201,8 +201,8 @@ highlightKey: String? = null) {
                     AboutActionRow(
                         icon = painterResource(R.drawable.ic_telegram_new),
                         title = "Telegram",
-                        subtitle = "t.me/EchoMusicApp",
-                        onClick = { uriHandler.openUri("https://t.me/EchoMusicApp") },
+                        subtitle = "t.me/LyraMusicApp",
+                        onClick = { uriHandler.openUri("https://t.me/LyraMusicApp") },
                     )
                 }
             } */
@@ -293,7 +293,7 @@ private fun AboutAppCard() {
             Spacer(Modifier.height(4.dp))
             
             Text(
-                text = if (rotation <= 90f) "Echo Music" else "Developed by Aditya",
+                text = if (rotation <= 90f) "Lyra Music" else "Developed by Aditya",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface,
