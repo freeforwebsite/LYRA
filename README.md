@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="assets/Echo-new.png" alt="Echo Music Logo" width="120"/>
+  <img src="assets/Echo-new.png" alt="Lyra Music Logo" width="120"/>
 
-  <h1>Echo Music</h1>
+  <h1>Lyra Music</h1>
 
   <p><b>A modern Android music app with ad-free streaming, synced lyrics, offline playback, and an intuitive user experience.</b></p>
 </div>
@@ -10,14 +10,14 @@
 
 ## Overview
 
-Echo Music delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
+Lyra Music delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
 
 > [!IMPORTANT]
-> **In-app OTA updates have been permanently removed.** Please update manually via the website. Echo Music is completely free and ad-free; the few ads shown during a manual download help support the ongoing development of this project. Please do not open issues requesting to bring this back. Thank you for your support!
+> **In-app OTA updates have been permanently removed.** Please update manually via the website. Lyra Music is completely free and ad-free; the few ads shown during a manual download help support the ongoing development of this project. Please do not open issues requesting to bring this back. Thank you for your support!
 
 ---
 
-- **Discord**: [Join the Echo Music Discord server](https://discord.gg/Xt5hgsJJuA)
+- **Discord**: [Join the Lyra Music Discord server](https://discord.gg/Xt5hgsJJuA)
 
 ---
 
@@ -27,7 +27,6 @@ Echo Music delivers a seamless, premium listening experience by leveraging YouTu
 - [Screenshots](#screenshots)
 - [Features](#features)
 - [Installation & Setup](#installation--setup)
-- [Support the Project](#support-the-project)
 - [Contributors](#contributors)
 - [Special Thanks](#special-thanks)
 
@@ -158,7 +157,7 @@ Echo Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ### Android Installation
 
-Download the latest pre-compiled APK from the [Releases Page](https://github.com/EchoMusicApp/Echo-Music/releases/latest).
+Download the latest pre-compiled APK from the [Releases Page](https://github.com/EchoMusicApp/LYRA/releases/latest).
 
 <details>
 <summary><b>Building from Source</b></summary>
@@ -167,8 +166,8 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/iad1tya/Echo-Music.git
-   cd Echo-Music
+   git clone https://github.com/iad1tya/LYRA.git
+   cd LYRA
    ```
 
 2. **Configure Android SDK**
@@ -184,7 +183,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
    Firebase is required for analytics and crash reporting. See the instructions in [SETUP.md](SETUP.md#3-configure-firebase-optional) for adding your `google-services.json`.
 
 4. **Build the Application**
-   Echo Music has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
+   Lyra Music has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
 
    - To build the **FOSS** Universal Debug variant:
      ```bash
@@ -201,45 +200,9 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 
 ---
 
-## Support the Project
-
-If Echo Music has been useful to you, consider supporting its development.
-
-<div align="left">
-  <table style="margin: 0 auto; border-collapse: collapse; border: none;">
-    <tr>
-      <td align="center" style="padding: 15px; border: none;">
-        <a href="https://buymeacoffee.com/iad1tya" style="text-decoration:none;"><img src="assets/bmac.png" alt="Buy Me A Coffee Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
-      </td>
-      <td align="center" style="padding: 15px; border: none;">
-        <a href="https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=iad1tya@upi&pn=Aditya%20Yadav&am=&tn=Thank%20You" style="text-decoration:none;"><img src="assets/upi.svg" alt="UPI Logo" width="100" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
-      </td>
-      <td align="center" style="padding: 15px; border: none;">
-        <a href="https://www.patreon.com/cw/iad1tya" style="text-decoration:none;"><img src="assets/patreon3.png" alt="Patreon Logo" width="100" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br>
-
-<details>
-<summary><b>Cryptocurrency Options</b></summary>
-<br>
-
-| Network      | Address                                        |
-| :----------- | :--------------------------------------------- |
-| **Bitcoin**  | `bc1qcvyr7eekha8uytmffcvgzf4h7xy7shqzke35fy`   |
-| **Ethereum** | `0x51bc91022E2dCef9974D5db2A0e22d57B360e700`   |
-| **Solana**   | `9wjca3EQnEiqzqgy7N5iqS1JGXJiknMQv6zHgL96t94S` |
-
-</details>
-
----
-
 ## Contributors
 
-Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Echo Music!
+Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Lyra Music!
 
 <!-- readme: contributors -start -->
 <table>
@@ -252,7 +215,7 @@ Without the support of this incredible open-source community, none of this would
 
 ## Special Thanks
 
-Echo Music stands on the shoulders of several excellent open-source projects. Sincere thanks to:
+Lyra Music stands on the shoulders of several excellent open-source projects. Sincere thanks to:
 
 | Project                                                                                                                   | Description                                         |
 | :------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
@@ -269,15 +232,15 @@ Echo Music stands on the shoulders of several excellent open-source projects. Si
 
 ### 1. 100% Free, Open-Source & Strictly Non-Commercial
 
-Echo Music is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
+Lyra Music is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
 
 ### 2. A Custom Browser with Content Filtering
 
-Echo Music acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
+Lyra Music acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
 
 ### 3. Support Content Creators
 
-We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Echo Music is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
+We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Lyra Music is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
 
 ### 4. No Hosting of Copyrighted Material
 
@@ -285,12 +248,13 @@ We do not host, upload, distribute, or store any audio, video, or copyrighted me
 
 ### 5. User Responsibility & Legal Contact
 
-The software is provided "AS IS", without warranty of any kind. The developers of Echo Music do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
+The software is provided "AS IS", without warranty of any kind. The developers of Lyra Music do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
 
-Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [hello@echomusic.fun](mailto:hello@echomusic.fun)
+Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [](mailto:)
 
 ---
 
 <div align="center">
   <p>Licensed under <a href="LICENSE">GPL-3.0</a></p>
 </div>
+
