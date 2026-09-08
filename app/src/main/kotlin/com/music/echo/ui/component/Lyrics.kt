@@ -1209,12 +1209,12 @@ fun Lyrics(
                             this.alpha = if (item.isBackground) alpha * 0.8f else alpha
                             this.scaleX = scale * bgScale
                             this.scaleY = scale * bgScale
-                            if (blurRadius > 0f && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                                this.renderEffect = android.graphics.RenderEffect.createBlurEffect(
+                            if (blurRadius > 0f) {
+                                this.renderEffect = androidx.compose.ui.graphics.BlurEffect(
                                     blurRadius * density.density,
                                     blurRadius * density.density,
-                                    android.graphics.Shader.TileMode.CLAMP
-                                ).asComposeRenderEffect()
+                                    androidx.compose.ui.graphics.TileMode.Clamp
+                                )
                             }
                         },
                         horizontalAlignment = agentAlignment

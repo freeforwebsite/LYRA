@@ -1,8 +1,8 @@
-# Echo Music Design Guidelines
+# Lyra Music Design Guidelines
 
-Echo Music follows a **custom, modern aesthetic** that blends some Material Design principles with unique, iOS-inspired patterns. 
+Lyra Music follows a **custom, modern aesthetic** that blends some Material Design principles with unique, iOS-inspired patterns. 
 
-This document is the definitive guide for designing and implementing UI in the Echo Music codebase. All new UI work and refactors must follow these custom principles rather than strictly adhering to Google's Material Design 3 spec.
+This document is the definitive guide for designing and implementing UI in the Lyra Music codebase. All new UI work and refactors must follow these custom principles rather than strictly adhering to Google's Material Design 3 spec.
 
 ---
 
@@ -12,7 +12,7 @@ We use a dynamic color system, but apply it in a custom way to achieve a unique 
 
 ### Dynamic Color & Seed
 *   **Dynamic First:** Colors must come from `MaterialTheme.colorScheme`, but are often modified (e.g., using alpha transparency) to create glass-like effects.
-*   **Translucency:** A core part of the Echo Music look is translucent surfaces. For example, cards often use `surfaceVariant.copy(alpha = 0.3f)` rather than solid M3 container colors.
+*   **Translucency:** A core part of the Lyra Music look is translucent surfaces. For example, cards often use `surfaceVariant.copy(alpha = 0.3f)` rather than solid M3 container colors.
 
 ### Semantic Color Roles
 Use the correct semantic color roles as defined by our theme:
@@ -31,7 +31,7 @@ Do NOT strictly force Material 3 components if they break the app's custom aesth
 *   **Rounded Shapes:** Elements heavily lean towards large corner radii (`RoundedCornerShape(24.dp)` or `CircleShape`).
 
 ### Cards & Surfaces
-*   **Custom Cards:** Unlike standard M3 cards (which use solid `surfaceContainer` colors), Echo Music cards typically use:
+*   **Custom Cards:** Unlike standard M3 cards (which use solid `surfaceContainer` colors), Lyra Music cards typically use:
     *   *Container:* `surfaceVariant.copy(alpha = 0.3f)`
     *   *Shape:* `RoundedCornerShape(24.dp)` or `28.dp`
     *   *Elevation:* 0.dp (flat, translucent look).
@@ -54,3 +54,4 @@ Always use `MaterialTheme.typography` but respect the app's established font wei
 Before adding a brand new UI component, always check `ui/component/` to see if an existing one already implements our conventions.
 
 **Key Rule:** When working on UI, **look at the existing screens** (like the original Listen Together or Settings screens) and copy their specific visual style, spacing, and modifier chains. Do NOT refactor existing screens to match standard Material 3 unless explicitly requested. Our custom aesthetic takes precedence over M3 guidelines.
+
