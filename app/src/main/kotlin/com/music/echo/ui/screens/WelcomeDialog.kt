@@ -175,8 +175,8 @@ private fun WelcomeAppCard() {
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             val isDark = MaterialTheme.colorScheme.surface.luminance() < 0.5f
-            AsyncImage(
-                model = R.mipmap.ic_launcher,
+            Image(
+                painter = painterResource(R.mipmap.ic_launcher),
                 contentDescription = null,
                 modifier = Modifier
                     .size(100.dp)

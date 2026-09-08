@@ -275,7 +275,6 @@ private fun AboutAppCard() {
                     Image(
                         painter = painterResource(R.drawable.ic_launcher_nobg),
                         contentDescription = null,
-                        colorFilter = ColorFilter.tint(if (isDark) Color.White else Color(0xFFEA3829)),
                         modifier = Modifier.fillMaxSize()
                     )
                 } else {
