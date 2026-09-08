@@ -274,7 +274,6 @@ private fun AboutAppCard() {
                             modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
                         )
                     }
-                }
             }
         }
     }
