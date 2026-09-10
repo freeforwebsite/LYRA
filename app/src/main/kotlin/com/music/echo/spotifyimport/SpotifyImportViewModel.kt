@@ -231,7 +231,7 @@ class SpotifyImportViewModel @Inject constructor(
         if (selectedSources.isEmpty()) return
 
         val job = viewModelScope.launch(Dispatchers.IO) {
-            _uiState.update { it.copy(summary = null, errorMessage = null) }
+            _uiState.update { it.copy(summary = null, errorMessage = null, isProgressHidden = false) }
             try {
                 val summary =
                     repository.importSources(selectedSources) { progress ->
@@ -266,7 +266,11 @@ class SpotifyImportViewModel @Inject constructor(
     fun cancelImport() {
         importJob?.cancel()
         importJob = null
-        _uiState.update { it.copy(progress = null) }
+        _uiState.update { it.copy(progress = null, isProgressHidden = false) }
+    }
+
+    fun hideProgressDialog() {
+        _uiState.update { it.copy(isProgressHidden = true) }
     }
 
     fun dismissSummary() {

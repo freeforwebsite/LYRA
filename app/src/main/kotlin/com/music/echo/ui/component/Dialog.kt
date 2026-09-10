@@ -60,12 +60,13 @@ fun DefaultDialog(
     icon: (@Composable () -> Unit)? = null,
     title: (@Composable () -> Unit)? = null,
     buttons: (@Composable RowScope.() -> Unit)? = null,
+    properties: DialogProperties = DialogProperties(usePlatformDefaultWidth = false),
     horizontalAlignment: Alignment.Horizontal = Alignment.CenterHorizontally,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Dialog(
         onDismissRequest = onDismiss,
-        properties = DialogProperties(usePlatformDefaultWidth = false)
+        properties = properties
     ) {
         Surface(
             modifier = Modifier.padding(24.dp),

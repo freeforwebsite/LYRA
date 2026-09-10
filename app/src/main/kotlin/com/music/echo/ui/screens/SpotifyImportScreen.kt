@@ -268,10 +268,11 @@ private fun SpotifyImportDialogs(
         )
     }
 
-    state.progress?.let { progress ->
+    if (state.progress != null && !state.isProgressHidden) {
         SpotifyImportProgressDialog(
-            progress = progress,
+            progress = state.progress,
             onCancel = { viewModel.cancelImport() },
+            onBackground = { viewModel.hideProgressDialog() }
         )
     }
 }
@@ -280,11 +281,20 @@ private fun SpotifyImportDialogs(
 private fun SpotifyImportProgressDialog(
     progress: SpotifyImportProgressUi,
     onCancel: () -> Unit,
+    onBackground: () -> Unit,
 ) {
     DefaultDialog(
-        onDismiss = onCancel,
+        onDismiss = onBackground,
+        properties = androidx.compose.ui.window.DialogProperties(
+            dismissOnBackPress = false,
+            dismissOnClickOutside = false,
+            usePlatformDefaultWidth = false
+        ),
         title = { Text(stringResource(R.string.spotify_import_in_progress)) },
         buttons = {
+            TextButton(onClick = onBackground) {
+                Text("Background")
+            }
             TextButton(onClick = onCancel) {
                 Text(stringResource(android.R.string.cancel))
             }

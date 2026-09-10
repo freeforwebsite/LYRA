@@ -69,6 +69,7 @@ data class SpotifyImportUiState(
     val sources: List<SpotifyImportSourceUi> = emptyList(),
     val selectedSourceIds: Set<String> = emptySet(),
     val progress: SpotifyImportProgressUi? = null,
+    val isProgressHidden: Boolean = false,
     val summary: SpotifyImportSummaryUi? = null,
     val errorMessage: String? = null,
 ) {

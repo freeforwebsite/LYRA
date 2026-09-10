@@ -34,7 +34,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = 155
-        versionName = "1.2.5"
+        versionName = "1.2.5" + (System.getenv("GITHUB_RUN_NUMBER")?.let { "-b$it" } ?: "")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
